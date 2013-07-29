@@ -6,10 +6,10 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 
-//  response.send(fs.readFileSync('2index.html', 'utf8'));
+    response.send(fs.readFileSync('index.html', 'utf8'));
     
-    var buff = fs.readFileSync('2index.html');   
-//    response.send(buf.toString(buff) + "this" ); 
+//    var bufr = fs.readFileSync('2index.html');   
+//    response.send(bufr.toString('utf8', 0, bufr.length));
 
 });
 
